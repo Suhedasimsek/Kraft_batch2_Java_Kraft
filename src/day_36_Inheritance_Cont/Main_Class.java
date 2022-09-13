@@ -1,5 +1,8 @@
 package day_36_Inheritance_Cont;
 
+
+
+
 public class Main_Class {
     public static void main(String[] args) {
 
@@ -9,6 +12,8 @@ VanKedisi vanKedisi=new VanKedisi();
     vanKedisi.isDifferenteyes=true;
     vanKedisi.isNankor=true;
     vanKedisi.color="beyaz";
+
+        System.out.println(vanKedisi.color);
 
 
 

@@ -1,6 +1,8 @@
 package day_36_Inheritance_Cont;
 
-public class Vehicle {
+import day_37_Inheritance_Cont_2.Fabrika;
+
+public class Vehicle  {
     int model;
    static String color;
     int speed;
@@ -11,4 +13,6 @@ public class Vehicle {
     public void stop(){
         System.out.println("araç durduruldu");
     }
+
+
 }
