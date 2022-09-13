@@ -1,4 +1,4 @@
-package day_4;
+package day_4_DataTypes;
 
 public class Binary {
     public static void main(String[] args) {

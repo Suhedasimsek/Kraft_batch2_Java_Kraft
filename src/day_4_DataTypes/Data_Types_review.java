@@ -1,4 +1,4 @@
-package day_4;
+package day_4_DataTypes;
 
 public class Data_Types_review {
 
