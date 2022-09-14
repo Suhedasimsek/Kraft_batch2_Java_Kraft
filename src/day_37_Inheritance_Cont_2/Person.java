@@ -7,7 +7,7 @@ public class Person {
     String surName;
     int id;
     double salary;
-
+  Person(){}
 
     public void createId(){
         Random random=new Random();
