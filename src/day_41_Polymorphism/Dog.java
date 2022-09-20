@@ -2,7 +2,7 @@ package day_41_Polymorphism;
 
 public class Dog extends Animal{
     int disSayisi;
-    int ayakSayisi=4;
+  boolean isPet;
 
     public void voice(){
         System.out.println("hav hav");

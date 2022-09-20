@@ -38,12 +38,14 @@ public class Main_Polymorphism {
         Dog dog=(Dog)animal;
         dog.eat(); */ //hata
 
-
-
         Animal animal=new Dog();
         Dog dog=(Dog)animal;
+        dog.sleep();
+        animal.sleep();
 
-        animal.voice();
+
+
+
 
 
 

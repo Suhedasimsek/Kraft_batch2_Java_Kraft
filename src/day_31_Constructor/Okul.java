@@ -18,7 +18,7 @@ public class Okul {
         this.renk=renk;
     }
     public  Okul(String renk,int kapasite){
-        this();
+
         this.renk=renk;
         if(kapasite>500){
             System.err.println("Hatalı giriş kapasite 500 den büyük olamaz");
