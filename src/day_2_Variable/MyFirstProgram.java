@@ -33,7 +33,7 @@ public class MyFirstProgram extends Daire  {
 
     }
 //merhaba
-    //iyi akşamlar
+    //iyi akşamlar2
 
 
 }
