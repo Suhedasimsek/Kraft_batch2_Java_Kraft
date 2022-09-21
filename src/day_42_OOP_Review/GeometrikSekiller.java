@@ -1,10 +1,26 @@
 package day_42_OOP_Review;
 
-public class GeometrikSekiller {
+public  class GeometrikSekiller {
      boolean isKare;
+     int a=5;
+    static{
+        System.out.println("parent static çalıştı");
+    }
 
-    GeometrikSekiller(boolean isKare){
-        this.isKare=isKare;
-        System.out.println("Şekil constructor çalıştı");
+    {
+        System.out.println("parent block");
+    }
+
+    GeometrikSekiller(){
+
+        System.out.println("parent constructor çalıştı");
+    }
+
+   final public  void notOverride(){
+
+    }
+
+    public static void getName(){
+        System.out.println("bu bir şekildir");
     }
 }

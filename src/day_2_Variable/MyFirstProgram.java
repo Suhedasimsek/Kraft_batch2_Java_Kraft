@@ -3,7 +3,7 @@ package day_2_Variable;
 import day_41_Polymorphism.Animal;
 import day_42_OOP_Review.Daire;
 
-public class MyFirstProgram  {
+public class MyFirstProgram extends Daire  {
 
 
     public static void main(String[] args){
@@ -28,9 +28,11 @@ public class MyFirstProgram  {
 
         // System.out.println(daire.alan());
         System.out.println();
+        System.out.println(radius);
 
 
     }
+//merhaba
 
 
 }
