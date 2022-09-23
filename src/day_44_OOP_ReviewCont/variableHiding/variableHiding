@@ -1,0 +1,14 @@
+if the variable in the parent class is defined
+wth same name same signature in the child class.
+There is two referans situatin
+one of them from child class
+one of them from parent class
+
+if we are referancing from child class
+        variable in the child class is used
+if we are referancing from parent class
+        variable in the parent class is used
+
+       *closed one is used
+
+       -----
