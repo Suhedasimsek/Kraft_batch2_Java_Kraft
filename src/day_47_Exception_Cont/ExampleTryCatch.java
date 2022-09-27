@@ -80,10 +80,17 @@ boolean devam=true;
         //array içerinde en büyük sayının index numarasını getiren metodu yazınız
         //eğer en büyük sayıdan 2 veya daha fazla var ise new exception throw edin.
 
-int[] array={1,5,4,3,1};
+int[] array={1,3,5,8,5};
+      //  System.out.println(maxDeger(array));
+
         System.out.println(maxNumberIndex(array));
+
     }
     //1,2 ,5,4,5   1,2,4,5,5
+
+    //array içerinde en büyük sayının index numarasını getiren metodu yazınız
+    //eğer en büyük sayıdan 2 veya daha fazla var ise new exception throw edin.
+
     public static int maxNumberIndex(int[] array) throws Exception {
 
         /*
@@ -119,9 +126,21 @@ int[] array={1,5,4,3,1};
 
         Arrays.sort(arr);
         int x=arr[arr.length-1];
+
+        if(arr.length==1) return 0;
+
         if(arr[arr.length-2]==x){
-            throw new Exception("en büyük sayıdan 2 adet vardır");
+                throw new Exception("en büyük sayıdan 2 adet vardır");
         }
+
+
+       /* try {
+            if(arr[arr.length-2]==x){
+                throw new Exception("en büyük sayıdan 2 adet vardır");
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+
+        }catch (Exception e){}  */
 
         for(int i=0; i<array.length; i++){
             if(array[i]==x){
@@ -175,5 +194,11 @@ int[] array={1,5,4,3,1};
         return true;
 
     }
+
+
+
+
+
+
 
 }
