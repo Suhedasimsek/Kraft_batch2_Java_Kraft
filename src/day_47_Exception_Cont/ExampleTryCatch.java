@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExampleTryCatch {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         //integer değişken kabul eden bir metot yazın
         //kullanıcıdan tek bir giriş sağlayın
@@ -80,11 +80,16 @@ boolean devam=true;
         //array içerinde en büyük sayının index numarasını getiren metodu yazınız
         //eğer en büyük sayıdan 2 veya daha fazla var ise new exception throw edin.
 
-
+int[] array={1,4,4,3,1};
+        System.out.println(maxNumberIndex(array));
     }
     //1,2 ,5,4,5   1,2,4,5,5
-    /*public static int maxNumberIndex(int[] array) throws Exception {
-        int arr[]=array;
+    public static int maxNumberIndex(int[] array) throws Exception {
+        int[] arr=new int[array.length];
+     for (int i=0;i<array.length; i++){
+         arr[i]=array[i];
+     }
+
         int indexNumber=0;
 
         Arrays.sort(arr);
@@ -106,9 +111,9 @@ boolean devam=true;
 
     public static int maxNumber(int[] arr){
 
-        Arrays.sort(arr);
-        int min=arr[0];
-        int max=arr[arr.length-1];
+       // Arrays.sort(arr);
+        //int min=arr[0];
+        //int max=arr[arr.length-1];
 
 
 
@@ -145,5 +150,5 @@ boolean devam=true;
         return true;
 
     }
-*/
+
 }
