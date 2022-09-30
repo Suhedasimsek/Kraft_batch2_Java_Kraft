@@ -7,8 +7,8 @@ import java.util.List;
 
 public class CollectionStudy {
     public static void main(String[] args) {
-//        ArrayList<Integer> lst1 = new ArrayList<>();
-//        List<Integer> lst2 = new ArrayList<>();//polymorphic way
+//        ArrayList<Integer> list1 = new ArrayList<>();
+//        List<Integer> list2 = new ArrayList<>();//polymorphic way
 
         Collection<Integer> col = new ArrayList<>();
 
@@ -40,7 +40,9 @@ public class CollectionStudy {
 
         //remove all
 //        col.removeAll(col);
-//        col.removeAll(Arrays.asList(50,500));//remove yapılmak istenen collcetionın eşleşen elemanları remove edilir.
+        col.removeAll(Arrays.asList(50,500));
+        //remove yapılmak istenen collcetionın eşleşen elemanları
+        // remove edilir.
         System.out.println("col = " + col);
 
         //adding all
@@ -52,12 +54,14 @@ public class CollectionStudy {
 
         //retains all [25, 20, 50, 5, 80, 60, 70, 90]
 //        col.retainAll(Arrays.asList(25,20));
-//        col.retainAll(Arrays.asList(250,200));//eger girilen elemanlar listede yoksa boş bir collection dondurur.
+//        col.retainAll(Arrays.asList(250,200));
+// eger girilen elemanlar listede yoksa boş bir collection dondurur.
         System.out.println("col = " + col);
+
 
         //turning to array [25, 20, 50, 5, 80, 60, 70, 90]
 //        Integer[] toArray = col.toArray(new Integer[0]);
-        Integer[] toArray = col.toArray(new Integer[11]);//[25, 20, 50, 5, 80, 60, 70, 90, null, null, null]
+        Integer[] toArray = col.toArray(new Integer[8]);//[25, 20, 50, 5, 80, 60, 70, 90, null, null, null]
         System.out.println("array : "+Arrays.toString(toArray));
 
 

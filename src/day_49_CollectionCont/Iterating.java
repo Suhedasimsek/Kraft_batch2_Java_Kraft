@@ -44,7 +44,13 @@ public class Iterating {
                 myIter.remove();
             }
         }
+        System.out.println("myIter = " + cll);
         System.out.println("myIter.hasNext() = " + myIter.hasNext());
+        Iterator<Integer> iterator = cll.iterator();
+        System.out.println("iterator.hasNext() = " + iterator.hasNext());
+        System.out.println("iterator.next() = " + iterator.next());
+        iterator.remove();
+        System.out.println("cll = " + cll);
 
 
 //        System.out.println("myIter.hasNext() = " + myIter.hasNext());
