@@ -86,4 +86,6 @@ public class ListExampleInterview {
     //    //ey,  edip, adanada, pide, ye      boş
 
 //Regex //Lamda
+
+
 }
