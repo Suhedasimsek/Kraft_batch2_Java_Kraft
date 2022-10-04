@@ -77,13 +77,13 @@ public class ListExampleInterview {
     }
 
     //ödev-1
-    // interviev questions List<String>
-    // List içerisindeki polindrom kelimeleri list içerinden silen metodu yazınız.
-    //ey,  edip, adanada, pide, ye  ey,  edip,pide, ye
-
-    //ödev-2
-    // List içerisindeki polindrom kelimeler varsa list içerinden her iki kelimeyi silen metodu yazınız.
-    //ey,  edip, adanada, pide, ye      boş
+    //    // interviev questions List<String>
+    //    // List içerisindeki polindrom kelimeleri list içerinden silen metodu yazınız.
+    //    //ey,  edip, adanada, pide, ye  ey,  edip,pide, ye
+    //
+    //    //ödev-2
+    //    // List içerisindeki polindrom kelimeler varsa list içerinden her iki kelimeyi silen metodu yazınız.
+    //    //ey,  edip, adanada, pide, ye      boş
 
 //Regex //Lamda
 }
