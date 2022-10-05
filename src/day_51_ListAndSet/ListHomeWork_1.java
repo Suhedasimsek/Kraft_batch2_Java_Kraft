@@ -8,11 +8,13 @@ public class ListHomeWork_1 {
 
     public static List<String> removePalindromList(List<String> list){
 
-        for (int i = 0; i < list.size() ; i++) {
+        for (int i = 0; i < list.size() ; ) {
 
            if(list.get(i).equals(reversePalindrom(list.get(i)))){
                list.remove(list.get(i));
+               continue;
             }
+            i++;
 
         }
 
@@ -55,26 +57,30 @@ public class ListHomeWork_1 {
         //    // List içerisindeki palindrom kelimeler varsa list içerinden her iki kelimeyi silen metodu yazınız.
         //    //ey,  edip, adanada, pide, ye      boş
 
-        List<String> list=new ArrayList<>(Arrays.asList("ali","efe","ey","edip","adanada","pide","ye"));
+        List<String> list=new ArrayList<>(Arrays.asList("ey","merhaba","edip","adanada","pide","ye"));
         //System.out.println(allPalindromClearList(list));
         System.out.println(allPalindromClearList(list));
+
 
     }
 
     public static List<String> allPalindromClearList(List<String> list){
+        // 0   1     2      3   4
+        // ey edip adanada pide ye
 
-       // List<String> newList=new ArrayList<>(list);
-        for ( int i = 0; i <list.size();) {
-        String reverStr=reversePalindrom(list.get(i));
+        for (int i = 0;  i< list.size() ; ) {
 
-                if(list.contains(reverStr)){
-                 list.removeAll(Arrays.asList(list.get(i),reverStr));
-                 continue;
-                }
-                i++;
-            }
+            String str=reversePalindrom(list.get(i));
+           if(list.contains(str)){
+               list.removeAll(Arrays.asList(list.get(i),str));
+               continue;
+           }
+            i++;
 
-           return list;
+        }
+
+return list;
+
 
         }
 
