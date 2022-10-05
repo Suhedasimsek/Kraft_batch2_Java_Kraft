@@ -20,6 +20,10 @@ public class MapExampleMain {
         okul.put(899,ogr1);
         okul.put(145,new Ogrenci("harun","yıldırım",10));
 
+        okul.get(899).setAverageNote(94.8);
+        System.out.println(okul.get(899).getAverageNote());
+        // System.out.println(okul.keySet());
+
    /*     System.out.println(okul.get(25).getSurName());
 
         List<Ogrenci> list=new ArrayList<>();
