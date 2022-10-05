@@ -45,6 +45,7 @@ public class ListHomeWork_1 {
     }
 
     public static void main(String[] args) {
+        /*
         // String a="harun";
         //System.out.println(reversePalindrom(a));
 
@@ -59,7 +60,46 @@ public class ListHomeWork_1 {
 
         List<String> list=new ArrayList<>(Arrays.asList("ey","merhaba","edip","adanada","pide","ye"));
         //System.out.println(allPalindromClearList(list));
-        System.out.println(allPalindromClearList(list));
+        Random random=new Random();
+        int rasgeleSayi=random.nextInt(list.size());
+      //  list.forEach(p-> System.out.println(p));
+        System.out.println(list.get(rasgeleSayi));
+Iterator<String> iter= list.iterator();
+while (iter.hasNext()){
+    System.out.println(iter.next());
+
+} */
+       // System.out.println(allPalindromClearList(list));
+
+
+        Set<String> set=new HashSet<>();
+        set.add("elma");
+        set.add("armut");
+        set.add("üzüm");
+     //   set.add("elma");
+
+
+        Set<String> newSet=new HashSet<>();
+        newSet.add("elma");
+        newSet.add("armut");
+        newSet.add("karpuz");
+
+        //set.retainAll(newSet); //kesişim kümesi
+
+       // set.addAll(newSet);   //birleşim
+       //  set.removeAll(newSet);
+       //System.out.println(set);
+
+        // System.out.print(set);
+
+        for(String str:set) {
+            System.out.println(str);
+
+        }
+
+
+
+
 
 
     }
